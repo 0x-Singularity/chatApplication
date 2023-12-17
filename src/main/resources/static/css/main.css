@@ -1,23 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap');
+
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-html,body {
+html, body {
     height: 100%;
     overflow: hidden;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    line-height: 1.58;
+    color: #333;
+    background-color: #111827;
 }
 
 body {
     margin: 0;
     padding: 0;
     font-weight: 400;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 1rem;
     line-height: 1.58;
     color: #333;
-    background-color: #f4f4f4;
+    background-color: #111827;
     height: 100%;
 }
 
@@ -36,6 +44,7 @@ body {
     min-height: 38px;
     font-size: 15px;
     border: 1px solid #c8c8c8;
+    border-radius: 25px;
 }
 
 .form-group {
@@ -50,6 +59,7 @@ input {
 h1, h2, h3, h4, h5, h6 {
     margin-top: 20px;
     margin-bottom: 20px;
+    font-weight: 600;
 }
 
 h1 {
@@ -57,7 +67,7 @@ h1 {
 }
 
 a {
-    color: #6db33f;
+    color: #58A6FF;
 }
 
 button {
@@ -73,6 +83,8 @@ button {
     transition: all 0.2s ease-in-out;
     cursor: pointer;
     min-height: 38px;
+    background-color: #4F8EF7; /* Updated color */
+    color: white;
 }
 
 button.default {
@@ -82,25 +94,40 @@ button.default {
 }
 
 button.primary {
-    background-color: #6db33f;
+    background-color: #4F8EF7;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12);
     color: #fff;
+    border-radius: 25px;
 }
 
 button.accent {
-    background-color: #6db33f;
+    background-color: #4F8EF7;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12);
     color: #fff;
 }
 
 #username-page {
+    background-color: #121212; /* Dark background for the whole page */
+    color: #E0E0E0;
     text-align: center;
 }
+
+.logo{
+    text-align:center;
+}
+.center-logo {
+       max-width: 500px;
+       margin-bottom: 30px;
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+}
+
 
 .username-page-container {
     background: #fff;
     box-shadow: 0 1px 11px rgba(0, 0, 0, 0.27);
-    border-radius: 2px;
+    border-radius: 50px;
     width: 100%;
     max-width: 500px;
     display: inline-block;
@@ -117,6 +144,34 @@ button.accent {
     margin-top: -160px;
 }
 
+#username-page .username-page-container {
+    background-color: #1A1A1A; /* Slightly lighter background for the container */
+    color: #E0E0E0; /* Light text color for text inside the container */
+    border: 1px solid #2C2C2C; /* Border to separate the container */
+}
+
+#username-page .title {
+    color: #E0E0E0; /* Light text color for the title */
+}
+
+#username-page .form-control {
+    background-color: #222222; /* Dark background for the input */
+    color: #E0E0E0; /* Light text color for the input */
+    border: 1px solid #2C2C2C; /* Border to define the edges of the input field */
+}
+
+#username-page .username-submit {
+    background-color: #4F8EF7; /* Green background for the button */
+    color: #FFFFFF; /* White text color for the button */
+}
+
+#username-page .form-control:focus {
+    border-color: #31A8FF; /* Subdued blue border for input focus */
+}
+
+#username-page .username-submit:hover {
+    background-color: #16A34A; /* Slightly darker green for button hover */
+}
 .username-page-container .username-submit {
     margin-top: 10px;
 }
@@ -127,16 +182,49 @@ button.accent {
     height: 100%;
 }
 
+#chat-page .chat-container {
+    background-color: #121212; /* Dark background for the container */
+    color: #E0E0E0; /* Light text color for general text */
+}
+
+#chat-page .chat-header {
+    background-color: #1A1A1A; /* Slightly lighter background for the header */
+    border-bottom: 1px solid #2C2C2C; /* Border to separate the header */
+    color: #E0E0E0; /* Light text color for the header */
+}
+
+#chat-page #messageArea {
+    background-color: #121212; /* Same as the container background */
+    color: #E0E0E0; /* Light text color for messages */
+}
+
+#chat-page .form-control {
+    background-color: #222222; /* Dark background for the input */
+    color: #E0E0E0; /* Light text color for the input */
+    border: 1px solid #2C2C2C; /* Border to define the edges of the input field */
+}
+
+#chat-page .primary {
+    background-color: #4F8EF7; /* Light Blue background for the button */
+    color: #FFFFFF; /* White text color for the button */
+    border-radius: 25px;
+}
+
+/* Connecting text */
+#chat-page .connecting {
+    color: #BB86FC; /* Subtle purple for the connecting message */
+}
+
 .chat-container {
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
-    background-color: #fff;
     box-shadow: 0 1px 11px rgba(0, 0, 0, 0.27);
     margin-top: 30px;
     height: calc(100% - 60px);
     max-height: 600px;
     position: relative;
+    border-radius: 50px;
 }
 
 #chat-page ul {
