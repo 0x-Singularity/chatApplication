@@ -9,7 +9,7 @@ This project was developed as a practice exercise for incorporation into my Algo
 - Real-time messaging.
 - User join and leave notifications.
 - View other users' messages.
-- Fast message delivery with webhooks.
+- Fast message delivery with webhooks
 
 
 ## Screenshots
